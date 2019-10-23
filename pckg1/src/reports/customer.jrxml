@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="customer" pageWidth="298" pageHeight="420" columnWidth="258" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="c8fd8200-ac3a-439b-852c-387d33d7c362">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="RCR"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[YFJDUmAuY3VzdG9tZXIgQVMgLDE4MSw5MywwYjA5MjBkYS0xZjQ5LTQxOTEtODJiOC1iZjhkYzll
+MjI0NDI7]]>
+	</property>
+	<queryString>
+		<![CDATA[SELECT `RCR`.customer.`customerId`,
+	`RCR`.customer.name,
+	`RCR`.customer.contact
+FROM `RCR`.customer]]>
+	</queryString>
+	<field name="customerId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="customerId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="contact" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="contact"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="54" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="0" width="260" height="50" uuid="b870b771-03d2-4da6-b09a-7e32ff60f929"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Double"/>
+				</box>
+				<image>
+					<reportElement x="51" y="3" width="29" height="27" uuid="a252b440-afe9-475f-b76f-8edad8fff31e"/>
+					<imageExpression><![CDATA["/home/ash/IdeaProjects/RCRMoto/pckg1/src/img/helmet.png"]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement x="47" y="27" width="180" height="18" uuid="a79dc424-5b28-4d1c-bb9e-e5c98296bbb2"/>
+					<textElement textAlignment="Left">
+						<font fontName="Noto Sans Symbols" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["BRINGING THE FOR OUR BIKE ENTHUSIASTS"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="81" y="11" width="150" height="20" uuid="b2e36c3e-c5e1-4f78-a179-004d9394db95"/>
+					<textElement textAlignment="Left">
+						<font fontName="Noto Sans CJK JP Bold" size="16" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["RCR Moto World"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="82" y="51" width="100" height="22" uuid="4f182866-d756-4c0f-b916-94d4c23ce1b3"/>
+					<textElement textAlignment="Center">
+						<font fontName="Noto Sans Symbols" size="10" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Customers"]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="14" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="16" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="86" height="15" uuid="c56009cc-7797-45a3-bb2d-236029a3cc2b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="91ae4923-0121-4fa6-a03b-91dd143eb758"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[customerId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="86" y="0" width="86" height="15" uuid="67ac1cda-4655-41cf-824f-329e58dd8f5c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="73ad7146-cb44-44d7-9d16-80fa147b92bd"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="172" y="0" width="86" height="15" uuid="4d51a7ab-3ea2-4566-8462-1543a6db851c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6291b558-b96b-475d-ac85-88007c0be8a2"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[contact]]></text>
+			</staticText>
+			<frame>
+				<reportElement x="0" y="0" width="258" height="15" uuid="c4f38592-0b78-4aa5-b750-26d148fc3dc2"/>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+			</frame>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="17" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="86" height="15" uuid="f6be7c73-5836-4297-8080-2a8e26f86c76">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="91ae4923-0121-4fa6-a03b-91dd143eb758"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{customerId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="86" y="0" width="86" height="15" uuid="78c2f91d-90d4-48a3-a3ad-640e810b4e44">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="73ad7146-cb44-44d7-9d16-80fa147b92bd"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="0" width="86" height="15" uuid="63b5b356-8809-43fc-9798-34167223e596">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6291b558-b96b-475d-ac85-88007c0be8a2"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{contact}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

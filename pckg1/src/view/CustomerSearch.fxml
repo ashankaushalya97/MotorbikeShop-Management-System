@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="473.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerSearchController">
+   <children>
+      <Pane layoutX="342.0" layoutY="22.0" prefHeight="33.0" prefWidth="182.0" style="-fx-background-color: #27323a;">
+         <children>
+            <Label layoutX="43.0" layoutY="4.0" text="Customer Search" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="WHITE" iconName="USER" layoutX="26.0" layoutY="20.0" size="16" />
+            <FontAwesomeIcon fill="WHITE" iconName="SEARCH" layoutX="8.0" layoutY="19.0" size="16" />
+         </children>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" height="27.08" radius="11.52" />
+         </effect>
+      </Pane>
+      <TableView fx:id="tbleCustomer" layoutX="80.0" layoutY="131.0" prefHeight="319.0" prefWidth="366.0">
+         <columns>
+            <TableColumn prefWidth="91.0" text="id" />
+            <TableColumn prefWidth="145.0" text="name" />
+            <TableColumn prefWidth="129.0" text="contact" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="80.0" layoutY="95.0" prefHeight="28.0" prefWidth="366.0" promptText="Search here" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="473.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InventorySearchController">
+   <children>
+      <Pane layoutX="342.0" layoutY="22.0" prefHeight="33.0" prefWidth="182.0" style="-fx-background-color: #27323a;">
+         <children>
+            <Label layoutX="44.0" layoutY="4.0" text="Inventory Search" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="WHITE" iconName="DATABASE" layoutX="25.0" layoutY="20.0" size="16" />
+            <FontAwesomeIcon fill="WHITE" iconName="SEARCH" layoutX="7.0" layoutY="19.0" size="16" wrappingWidth="13.714285850524902" />
+         </children>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" height="27.08" radius="11.52" />
+         </effect>
+      </Pane>
+      <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="43.0" layoutY="90.0" prefHeight="28.0" prefWidth="459.0" promptText="Search here" />
+      <TableView fx:id="tbleInventory" layoutX="44.0" layoutY="127.0" prefHeight="328.0" prefWidth="459.0">
+         <columns>
+            <TableColumn prefWidth="43.0" text="ID" />
+            <TableColumn prefWidth="49.0" text="Cate." />
+            <TableColumn prefWidth="69.0" text="Brand" />
+            <TableColumn prefWidth="101.0" text="Description" />
+            <TableColumn prefWidth="69.0" text="QtyOnHand" />
+            <TableColumn prefWidth="68.0" text="Buy" />
+            <TableColumn prefWidth="59.0" text="Sell" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginPane" prefHeight="345.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Pane prefHeight="345.0" prefWidth="255.0" style="-fx-background-color: #27323a;">
+         <children>
+            <ImageView fitHeight="86.0" fitWidth="83.0" layoutX="86.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/helmet.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="63.0" layoutY="192.0" prefHeight="22.0" prefWidth="129.0" text="RCR Moto World" textFill="WHITE">
+               <font>
+                  <Font name="FreeSans Bold" size="16.0" />
+               </font>
+            </Label>
+            <Circle fx:id="btnClose" fill="#fc0000" layoutX="11.0" layoutY="10.0" onMouseClicked="#btnClose_OnAction" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" radius="5.0" stroke="BLACK" strokeWidth="0.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Circle>
+            <Circle fx:id="btnMinimize" fill="#15c608" layoutX="25.0" layoutY="10.0" onMouseClicked="#btnMinimize_OnClicked" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" radius="5.0" stroke="BLACK" strokeWidth="0.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Circle>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="txtUsername" labelFloat="true" layoutX="317.0" layoutY="89.0" promptText="Username">
+         <effect>
+            <Reflection />
+         </effect>
+      </JFXTextField>
+      <JFXButton fx:id="btnLogin" layoutX="363.0" layoutY="224.0" onAction="#btnLogin_OnAction" styleClass="loginBtn" stylesheets="@../css/stylesheet.css" text="Login" textFill="WHITE">
+         <effect>
+            <Reflection bottomOpacity="0.2" />
+         </effect>
+      </JFXButton>
+      <JFXPasswordField fx:id="txtPassword" labelFloat="true" layoutX="317.0" layoutY="159.0" prefHeight="28.0" prefWidth="146.0" promptText="Password">
+         <effect>
+            <Reflection />
+         </effect>
+      </JFXPasswordField>
+   </children>
+</AnchorPane>

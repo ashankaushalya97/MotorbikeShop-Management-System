@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="311.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <VBox prefHeight="473.0" prefWidth="224.0" style="-fx-background-color: #435055;">
+         <children>
+            <Pane prefHeight="84.0" prefWidth="224.0" style="-fx-background-color: #27323A;">
+               <children>
+                  <Label layoutX="77.0" layoutY="32.0" text="RCR Moto World" textFill="#f8eeee">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="34.0" fitWidth="44.0" layoutX="35.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/helmet.png" />
+                     </image>
+                  </ImageView>
+                  <Circle fx:id="btnClose" fill="#fc0000" layoutX="12.0" layoutY="8.0" onMouseClicked="#btnClose_OnAction" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" radius="5.0" stroke="BLACK" strokeWidth="0.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="btnMinimize" fill="#15c608" layoutX="26.0" layoutY="8.0" onMouseClicked="#btnMinimize_OnClicked" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" radius="5.0" stroke="BLACK" strokeWidth="0.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Circle>
+               </children>
+            </Pane>
+            <JFXButton fx:id="btnHome" alignment="BASELINE_LEFT" graphicTextGap="12.0" onAction="#btnHome_OnAction" prefHeight="50.0" prefWidth="224.0" stylesheets="@../css/stylesheet.css" text="Home" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Noto Sans Regular" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="HOME" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnCustomer" alignment="BASELINE_LEFT" graphicTextGap="12.0" onAction="#btnCustomer_OnAction" prefHeight="50.0" prefWidth="224.0" stylesheets="@../css/stylesheet.css" text="Customer" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Noto Sans Regular" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="USER" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnInventory" alignment="BASELINE_LEFT" graphicTextGap="12.0" onAction="#btnInventory_OnAction" prefHeight="50.0" prefWidth="224.0" stylesheets="@../css/stylesheet.css" text="Inventory" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Noto Sans Regular" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="DATABASE" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnOrder" alignment="BASELINE_LEFT" graphicTextGap="12.0" onAction="#btnOrder_OnAction" prefHeight="50.0" prefWidth="224.0" stylesheets="@../css/stylesheet.css" text="Order" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Noto Sans Regular" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="SHOPPING_CART" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnDelivery" alignment="BASELINE_LEFT" graphicTextGap="9.0" onAction="#btnDelivery_OnAction" prefHeight="50.0" prefWidth="224.0" stylesheets="@../css/stylesheet.css" text="Delivery" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Noto Sans Regular" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="TRUCK" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnSearch" alignment="BASELINE_LEFT" graphicTextGap="12.0" onAction="#btnSearch_OnAction" prefHeight="50.0" prefWidth="224.0" stylesheets="@../css/stylesheet.css" text="Search" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Noto Sans Regular" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="SEARCH" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnReports" alignment="BASELINE_LEFT" graphicTextGap="12.0" onAction="#btnReports_OnAction" prefHeight="50.0" prefWidth="224.0" stylesheets="@../css/stylesheet.css" text="Reports" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Noto Sans Regular" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="LIST" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="ArpStage" layoutX="224.0" prefHeight="473.0" prefWidth="524.0" />
+   </children>
+</AnchorPane>
